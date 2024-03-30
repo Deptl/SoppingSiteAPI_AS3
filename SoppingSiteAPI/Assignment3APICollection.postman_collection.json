@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "392f14ec-974c-4aee-a0c3-bf27f742a0ec",
+		"name": "Assignment3APICollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15495288"
+	},
+	"item": [
+		{
+			"name": "Get Cart Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Cart Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartId\": 0,\r\n  \"ctProduct\": 14,\r\n  \"quantities\": 1,\r\n  \"ctUser\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cart Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cartId\": 6,\r\n    \"ctProduct\": 2,\r\n    \"quantities\": 2,\r\n    \"ctUser\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Cart/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Cart",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cart Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Cart/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Cart",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Cart Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Cart/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Cart",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Comment Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"commentId\": 0,\r\n        \"commentText\": \"GOOD PRODUCT\",\r\n        \"cUser\": 4,\r\n        \"cUserProduct\": 25,\r\n        \"rating\": 5,\r\n        \"cImages\": \"IMG23\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Comment Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"commentId\": 1,\r\n        \"commentText\": \"Noice\",\r\n        \"cUser\": 3,\r\n        \"cUserProduct\": 15,\r\n        \"rating\": 5,\r\n        \"cImages\": \"IMG\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Comment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Comment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Comment Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Comment/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Comment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"orderId\": 0,\r\n        \"ros\": 500\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"orderId\": 1,\r\n        \"ros\": 50\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Order/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Order",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"productId\": 4,\r\n        \"name\": \"QWE\",\r\n        \"description\": \"QWERTY\",\r\n        \"image\": \"IMG45\",\r\n        \"pricing\": \"11.11\",\r\n        \"shippingCost\": \"22.22\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Product/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"productId\": 0,\r\n        \"name\": \"QWEqqqqwe\",\r\n        \"description\": \"QWERTYqwer\",\r\n        \"image\": \"IMG25\",\r\n        \"pricing\": \"111.11\",\r\n        \"shippingCost\": \"221.22\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Product/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Product",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Product/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 4,\r\n    \"email\": \"qy@gmail.com\",\r\n    \"password\": \"qwertyuiop\",\r\n    \"username\": \"qwertyasdfg\",\r\n    \"history\": 30,\r\n    \"address\": \"Waterloo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post User Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 0,\r\n    \"email\": \"qwerty@gmail.com\",\r\n    \"password\": \"qwertyuiop\",\r\n    \"username\": \"qwertyasdfg\",\r\n    \"history\": 45,\r\n    \"address\": \"Waterloo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5254/api/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Users/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific User Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5254/api/Users/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5254",
+					"path": [
+						"api",
+						"Users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
